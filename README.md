@@ -1,5 +1,5 @@
 # OAGBERT (Open Academic Graph BERT)
-We released two versions of OAGBERT by the end of 2021 February, including
+We released two versions of OAGBERT in [CogDL](https://github.com/THUDM/cogdl) package by the end of 2021 February, including
 
 ### V1: The vanilla version
 A basic version OAGBERT. Similar to [SciBERT](https://github.com/allenai/scibert), we pre-train the BERT model on academic text corpus in Open Academic Graph, including paper titles, abstracts and bodies.
