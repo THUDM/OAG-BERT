@@ -1,9 +1,7 @@
 # OAG-BERT (Open Academic Graph BERT)
-We released two versions of OAG-BERT in [CogDL](https://github.com/THUDM/cogdl) package. OAG-BERT is a heterogeneous entity-augmented academic language models which not only understands academic texts but also heterogeneous entity knowledge in [OAG](https://openacademic.ai/oag/). OAG-BERT surpasses other academic language models on a wide range of entity-aware tasks while maintains its performance on ordinary NLP tasks. 
+We released two versions of OAG-BERT in [CogDL](https://github.com/THUDM/cogdl) package. OAG-BERT is a heterogeneous entity-augmented academic language models which not only understands academic texts but also heterogeneous entity knowledge in [OAG](https://openacademic.ai/oag/). Join our [Slack](https://join.slack.com/t/openacademicgraph/shared_invite/zt-n6joob6b-Pw3xQMKdZIrVs5WimE37dw) or send us [email](liuxiao17@mails.tsinghua.edu.cn) for any comments and requests!
 
-Join our [Slack](https://join.slack.com/t/openacademicgraph/shared_invite/zt-n6joob6b-Pw3xQMKdZIrVs5WimE37dw) or send us [email](liuxiao17@mails.tsinghua.edu.cn) for any comments and requests!
-
-![](./example.png)
+![](./img/framework.png)
 
 ### V1: The vanilla version
 A basic version OAG-BERT. Similar to [SciBERT](https://github.com/allenai/scibert), we pre-train the BERT model on academic text corpus in Open Academic Graph, including paper titles, abstracts and bodies.
@@ -62,4 +60,9 @@ candidates = model.decode_beamsearch(
     force_forward=False
 )
 ```
-For more examples, refer to [examples/oagbert_metainfo.py](../../examples/oagbert_metainfo.py).
+
+OAG-BERT surpasses other academic language models on a wide range of entity-aware tasks while maintains its performance on ordinary NLP tasks. 
+
+![](./img/example.png)
+
+For more examples, refer to [examples/oagbert_metainfo.py](https://github.com/THUDM/cogdl/blob/master/examples/oagbert_metainfo.py) in CogDL.
