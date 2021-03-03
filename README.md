@@ -8,7 +8,7 @@ A basic version OAG-BERT. Similar to [SciBERT](https://github.com/allenai/sciber
 
 The usage of OAG-BERT is the same of ordinary SciBERT or BERT. For example, you can use the following code to encode two text sequences and retrieve their outputs
 ```python
-from cogdl import OAG-BERT
+from cogdl import oagbert
 
 tokenizer, bert_model = oagbert()
 
