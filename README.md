@@ -1,12 +1,16 @@
-# OAGBERT (Open Academic Graph BERT)
-We released two versions of OAGBERT in [CogDL](https://github.com/THUDM/cogdl) package by the end of 2021 February, including
+# OAG-BERT (Open Academic Graph BERT)
+We released two versions of OAG-BERT in [CogDL](https://github.com/THUDM/cogdl) package. OAG-BERT is a heterogeneous entity-augmented academic language models which not only understands academic texts but also heterogeneous entity knowledge in [OAG](https://openacademic.ai/oag/). OAG-BERT surpasses other academic language models on a wide range of entity-aware tasks while maintains its performance on ordinary NLP tasks. 
+
+Join our [Slack](https://join.slack.com/t/openacademicgraph/shared_invite/zt-n6joob6b-Pw3xQMKdZIrVs5WimE37dw) or send us [email](liuxiao17@mails.tsinghua.edu.cn) for any comments and requests!
+
+![](./example.png)
 
 ### V1: The vanilla version
-A basic version OAGBERT. Similar to [SciBERT](https://github.com/allenai/scibert), we pre-train the BERT model on academic text corpus in Open Academic Graph, including paper titles, abstracts and bodies.
+A basic version OAG-BERT. Similar to [SciBERT](https://github.com/allenai/scibert), we pre-train the BERT model on academic text corpus in Open Academic Graph, including paper titles, abstracts and bodies.
 
-The usage of OAGBERT is the same of ordinary SciBERT or BERT. For example, you can use the following code to encode two text sequences and retrieve their outputs
+The usage of OAG-BERT is the same of ordinary SciBERT or BERT. For example, you can use the following code to encode two text sequences and retrieve their outputs
 ```python
-from cogdl import oagbert
+from cogdl import OAG-BERT
 
 tokenizer, bert_model = oagbert()
 
@@ -16,7 +20,7 @@ outputs = bert_model(**tokens)
 ```
 
 ### V2: The entity augmented version
-An extension to the vanilla OAGBERT. We incorporate rich entity information in Open Academic Graph such as **authors** and **field-of-study**. Thus, you can encode various type of entities in OAGBERT v2. For example, to encode the paper of BERT, you can use the following code
+An extension to the vanilla OAG-BERT. We incorporate rich entity information in Open Academic Graph such as **authors** and **field-of-study**. Thus, you can encode various type of entities in OAG-BERT v2. For example, to encode the paper of BERT, you can use the following code
 ```python
 from cogdl import oagbert
 import torch
@@ -43,7 +47,7 @@ sequence_output, pooled_output = model.bert.forward(
     position_ids_second=torch.LongTensor(position_ids).unsqueeze(0)
 )
 ```
-You can also use some integrated functions to use OAGBERT v2 directly, such as using `decode_beamsearch` to generate entities based on existing context. For example, to generate concepts with 2 tokens for the BERT paper, run the following code
+You can also use some integrated functions to use OAG-BERT v2 directly, such as using `decode_beamsearch` to generate entities based on existing context. For example, to generate concepts with 2 tokens for the BERT paper, run the following code
 ```python
 model.eval()
 candidates = model.decode_beamsearch(
