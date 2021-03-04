@@ -66,3 +66,19 @@ OAG-BERT surpasses other academic language models on a wide range of entity-awar
 ![](./img/example.png)
 
 For more examples, refer to [examples/oagbert_metainfo.py](https://github.com/THUDM/cogdl/blob/master/examples/oagbert_metainfo.py) in CogDL.
+
+## Cite
+```
+@article{xiao2021oag,
+  title={OAG-BERT: Pre-train Heterogeneous Entity-augmented Academic Language Model},
+  author={Xiao Liu, Da Yin, Xingjian Zhang, Kai Su, Kan Wu, Hongxia Yang, Jie Tang},
+  journal={arXiv preprint arXiv:2103.02410},
+  year={2021}
+}
+@inproceedings{zhang2019oag,
+  title={OAG: Toward Linking Large-scale Heterogeneous Entity Graphs.},
+  author={Zhang, Fanjin and Liu, Xiao and Tang, Jie and Dong, Yuxiao and Yao, Peiran and Zhang, Jie and Gu, Xiaotao and Wang, Yan and Shao, Bin and Li, Rui and Wang, Kuansan},
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD’19)},
+  year={2019}
+}
+```
