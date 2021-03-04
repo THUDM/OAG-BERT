@@ -72,7 +72,7 @@ If you find it to be useful, please cite us in your work:
 ```
 @article{xiao2021oag,
   title={OAG-BERT: Pre-train Heterogeneous Entity-augmented Academic Language Model},
-  author={Xiao Liu, Da Yin, Xingjian Zhang, Kai Su, Kan Wu, Hongxia Yang, Jie Tang},
+  author={Liu, Xiao and Yin, Da and Zhang, Xingjian and Su, Kai and Wu, Kan and Yang, Hongxia and Tang, Jie},
   journal={arXiv preprint arXiv:2103.02410},
   year={2021}
 }
