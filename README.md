@@ -1,5 +1,5 @@
 # OAG-BERT (Open Academic Graph BERT)
-We released two versions of OAG-BERT in [CogDL](https://github.com/THUDM/cogdl) package. OAG-BERT is a heterogeneous entity-augmented academic language models which not only understands academic texts but also heterogeneous entity knowledge in [OAG](https://openacademic.ai/oag/). Join our [Slack](https://join.slack.com/t/openacademicgraph/shared_invite/zt-n6joob6b-Pw3xQMKdZIrVs5WimE37dw) or send us [email](mailto:liuxiao17@mails.tsinghua.edu.cn) for any comments and requests!
+We released two versions of OAG-BERT in [CogDL](https://github.com/THUDM/cogdl) package. OAG-BERT is a heterogeneous entity-augmented academic language models which not only understands academic texts but also heterogeneous entity knowledge in [OAG](https://openacademic.ai/oag/). Join our [Slack](https://join.slack.com/t/openacademicgraph/shared_invite/zt-n6joob6b-Pw3xQMKdZIrVs5WimE37dw) or [Google Group](https://groups.google.com/g/open-academic-graph) for any comments and requests!
 
 ![](./img/framework.png)
 
