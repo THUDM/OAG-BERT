@@ -82,7 +82,7 @@ for seq, prob in model.generate_title(abstract="To enrich language models with d
 # One of our generations: "pre-training oag-bert: an academic language model for enriching academic texts with domain knowledge"
 ```
 
-In addition to that, we fine-tuned the oagbert for calculating paper similarity based on name disambiguation tasks. The following codes demonstrate an example of using oagbert to calculate paper similarity.
+In addition to that, we fine-tune the OAG-BERT for calculating paper similarity based on name disambiguation tasks. The following codes demonstrate an example of using oagbert to calculate paper similarity.
 ```python
 import os
 from cogdl import oagbert
@@ -175,7 +175,7 @@ print(sim12, sim13)
 
 This fine-tuning was conducted on [whoiswho](https://www.aminer.cn/whoiswho) name disambiguation tasks. The papers written by the same authors are treated as positive pairs and the rests as negative pairs. We sample 0.4M positive pairs and 1.6M negative pairs and use constrative learning to fine-tune the OAG-BERT (version 2). For 50% instances we only use paper title while the other 50% use all heterogeneous information. We evaluate the performance using Mean Reciprocal Rank where higher values indicate better results. The performance on test sets is shown as below.
 
-|                                 | woagbert-v2 | oagbert-v2-sim |
+|                                 |  oagbert-v2 | oagbert-v2-sim |
 |:-------------------------------:|------------:|---------------:|
 |              Title              |       0.349 |          0.725 |
 | Title+Abstract+Author+Aff+Venue |       0.355 |          0.789 |
