@@ -172,7 +172,7 @@ sim13 = torch.mm(paper_embed_1, paper_embed_3.transpose(0, 1))
 print(sim12, sim13)
 ```
 
-This fine-tuning was conducted on whoiswho name disambiguation tasks. The papers written by the same authors are treated as positive pairs and the rests as negative pairs. We sample 0.4M positive pairs and 1.6M negative pairs and use constrative learning to fine-tune the OAG-BERT (version 2). For 50% instances we only use paper title while the other 50% use all heterogeneous information. We evaluate the performance using Mean Reciprocal Rank where higher values indicate better results. The performance on test sets is shown as below.
+This fine-tuning was conducted on [whoiswho](https://www.aminer.cn/whoiswho) name disambiguation tasks. The papers written by the same authors are treated as positive pairs and the rests as negative pairs. We sample 0.4M positive pairs and 1.6M negative pairs and use constrative learning to fine-tune the OAG-BERT (version 2). For 50% instances we only use paper title while the other 50% use all heterogeneous information. We evaluate the performance using Mean Reciprocal Rank where higher values indicate better results. The performance on test sets is shown as below.
 
 |                                 | woagbert-v2 | oagbert-v2-sim |
 |:-------------------------------:|------------:|---------------:|
